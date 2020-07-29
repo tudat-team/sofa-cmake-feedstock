@@ -8,11 +8,14 @@ source:
   git_url: https://github.com/tudat-team/sofa-cmake.git
   git_rev: fab8156a5ef1f873f46c0d2b5df0e048616a0a66
 
+build:
+  number: 1 # [unix]
+
 requirements:
-    build:
-        - cmake
-        - {{ compiler('c') }}              # [not win]
-        - vs2017_{{ target_platform  }}    # [win]
+  build:
+    - cmake
+    - {{ compiler('c') }}              # [not win]
+    - vs2017_{{ target_platform  }}    # [win]
 
 about:
   home: https://github.com/tudat-team/sofa-cmake
