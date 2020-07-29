@@ -8,10 +8,10 @@ environment:
 
   BINSTAR_TOKEN:
     # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
-    secure: ic9VPwEZqoLunniWG5UzufeHpCCkdA1SEFAwuZbkw26KJBMdaCnVSqU4o+WTlWE2
+    secure: vWktDJSW9Rh2frmNkzdUHF2n4WzalOoKudWGdBLo6jcC/suzU+fViO/3/TxLOnmW
 
   matrix:
-    - CONFIG: win_target_platformwin-64
+    - CONFIG: win_64_target_platformwin-64
       CONDA_INSTALL_LOCN: C:\Miniconda36-x64
 
 
