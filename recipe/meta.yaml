@@ -9,13 +9,16 @@ source:
   git_rev: fab8156a5ef1f873f46c0d2b5df0e048616a0a66
 
 build:
-  number: 1 # [unix]
+  number: 2
+  ignore_run_exports:
+    - m2w64-gcc-libs  # [win]
 
 requirements:
   build:
     - cmake
-    - {{ compiler('c') }}              # [not win]
-    - vs2017_{{ target_platform  }}    # [win]
+    - {{ compiler('c') }}               # [not win]
+    - {{ compiler('m2w64_c') }}         # [win]
+    - m2w64-toolchain                   # [win]
 
 about:
   home: https://github.com/tudat-team/sofa-cmake
