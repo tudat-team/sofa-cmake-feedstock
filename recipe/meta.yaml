@@ -9,12 +9,13 @@ source:
   git_rev: fab8156a5ef1f873f46c0d2b5df0e048616a0a66
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - cmake
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
 
 about:
   home: https://github.com/tudat-team/sofa-cmake
