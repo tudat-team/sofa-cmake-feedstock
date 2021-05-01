@@ -14,7 +14,7 @@ cmake \
 
 make
 
-if [  ! "$CONDA_BUILD_CROSS_COMPILATION" ]; then
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
   ctest -T Test
 fi
 
