@@ -14,7 +14,7 @@ cmake \
 
 make
 
-if [ "$HOST_PLATFORM" != "osx-arm64" ]; then
+if [  ! "$CONDA_BUILD_CROSS_COMPILATION" ]; then
   ctest -T Test
 fi
 
