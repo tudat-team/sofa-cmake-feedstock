@@ -28,7 +28,6 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make                     # [unix]
-    - {{ compiler('clang') }}  # [win]
 
 about:
   home: https://github.com/tudat-team/sofa-cmake
