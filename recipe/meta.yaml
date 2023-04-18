@@ -25,8 +25,8 @@ requirements:
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
     - cmake
-    - {{ compiler('c') }}      # [not win]
-    - {{ compiler('cxx') }}    # [not win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - make                     # [unix]
     - {{ compiler('clang') }}  # [win]
 
@@ -35,3 +35,6 @@ about:
   license: BSD
   license_family: BSD
   summary: Standards of Fundamental Astronomy code, copyright of the Board of the International Astronomical Union.
+extra:
+  recipe-maintainers:
+    - geoffreygarrett
