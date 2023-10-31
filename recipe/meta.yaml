@@ -16,7 +16,7 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: 7
+  number: 8
 
 requirements:
   build:
@@ -25,8 +25,9 @@ requirements:
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
     - cmake
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
+    - {{ compiler('cxx') }}    # [not win]
+    - {{ compiler('c') }}      # [not win]
+    - {{ compiler('clang') }}  # [win] 
     - make                     # [unix]
 
 about:
