@@ -1,9 +1,6 @@
 github:
   user_or_org: tudat-team
 
-channels:
-  targets:
-   - [tudat-team, main]
 
 conda_forge_output_validation: true
 
@@ -18,13 +15,4 @@ build_platform:
   osx_arm64: osx_64
 test_on_native_only: true
 
-appveyor:
-  secure:
-    BINSTAR_TOKEN: vWktDJSW9Rh2frmNkzdUHF2n4WzalOoKudWGdBLo6jcC/suzU+fViO/3/TxLOnmW
 
-azure:
-  # flag for forcing the building all supported providers
-  force: True
-  # toggle for storing the conda build_artifacts directory (including the
-  # built packages) as an Azure pipeline artifact that can be downloaded
-  store_build_artifacts: True
