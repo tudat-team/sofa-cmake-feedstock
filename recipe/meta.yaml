@@ -25,9 +25,8 @@ requirements:
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
     - cmake
-    - {{ compiler('cxx') }}    # [not win]
-    - {{ compiler('c') }}      # [not win]
-    - {{ compiler('clang') }}  # [win] 
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - make                     # [unix]
 
 about:
