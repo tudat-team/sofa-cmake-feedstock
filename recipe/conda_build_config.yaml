@@ -2,3 +2,11 @@ channel_targets:
   - tudat-team main
 channel_sources:
   - conda-forge, defaults
+c_compiler:
+  - clang
+c_compiler_version:
+  - 18
+cxx_compiler:
+  - clangxx
+cxx_compiler_version:
+  - 18

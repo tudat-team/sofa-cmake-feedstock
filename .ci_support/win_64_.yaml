@@ -1,10 +1,14 @@
 c_compiler:
-- vs2019
+- clang
+c_compiler_version:
+- '18'
 channel_sources:
 - conda-forge, defaults
 channel_targets:
 - tudat-team main
 cxx_compiler:
-- vs2019
+- clangxx
+cxx_compiler_version:
+- '18'
 target_platform:
 - win-64
